@@ -45,14 +45,31 @@
 // val5.push("monkey");
 // console.log(val5);
 
-//テンプレート文字列
-const name = "hayato";
-const age = "27";
-// わたしの名前はhayatoです。年齢は27さいです
-//従来
-const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
-console.log(message1);
+// //テンプレート文字列
+// const name = "hayato";
+// const age = "27";
+// // わたしの名前はhayatoです。年齢は27さいです
+// //従来
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
 
-//テンプレート文字列の場合
-const message2 = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message2);
+// //テンプレート文字列の場合
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+//アロー関数
+//従来
+// function func1(str) {
+//   return str;
+// }
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("this is func1."));
+
+//アロー関数
+const func2 = (str) => str;
+console.log(func2("this is func2."));
+
+const func3 = (num1, num2) => num1 + num2;
+console.log(func3(10, 20));
