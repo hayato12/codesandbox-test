@@ -62,14 +62,36 @@
 // function func1(str) {
 //   return str;
 // }
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("this is func1."));
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("this is func1."));
 
-//アロー関数
-const func2 = (str) => str;
-console.log(func2("this is func2."));
+// //アロー関数
+// const func2 = (str) => str;
+// console.log(func2("this is func2."));
 
-const func3 = (num1, num2) => num1 + num2;
-console.log(func3(10, 20));
+// const func3 = (num1, num2) => num1 + num2;
+// console.log(func3(10, 20));
+
+//分割代入
+
+// const myProfile = {
+//   name: "hayato",
+//   age: 27
+// };
+
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}です。`;
+// console.log(message1);
+
+// const { name, age } = myProfile;
+// const message2 = `名前は${name}です。年齢は${age}です。2`;
+// console.log(message2);
+
+const myProfile = ["hayato", 27];
+const message3 = `前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
+console.log(message3);
+
+const [name, age] = myProfile;
+const message4 = `前は${name}です。年齢は${age}です。4`;
+console.log(message4);
